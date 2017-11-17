@@ -39,9 +39,9 @@ export default class Weapons extends React.Component {
     let heavyOptions = this.state.weaponCategory === "heavy"? "" : " invisible";
     let thrownOptions = this.state.weaponCategory === "thrown"? "" : " invisible";
 
-    let item1 = this.state.weaponCategory === ""? "" : " item1";
-    let item2 = this.state.weaponCategory === ""? "" : " item2";
-    let item3 = this.state.weaponCategory === ""? "" : " item3";
+    let item1 = this.state.weaponCategory === "" ? "" : " weapon1";
+    let item2 = this.state.weaponCategory === "" ? "" : " weapon2";
+    let item3 = this.state.weaponCategory === "" ? "" : " weapon3";
     return (
       <div className="base-content">
         <div className="close-button" onClick={this.props.close}></div>

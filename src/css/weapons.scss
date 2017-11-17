@@ -56,20 +56,6 @@ ul {
      transform: translateX(-28%);
    }
   }
-  .item1 {
-    top: 15% !important;
-    transform: translate(-50%, -15%) !important;
-  }
-
-  .item2 {
-    top: 50% !important;
-    transform: translate(-50%, -50%) !important;
-  }
-
-  .item3 {
-    top: 85% !important;
-    transform: translate(-50%, -85%) !important;
-  }
 
   .chosen {
     border: 2px solid white;
@@ -109,4 +95,19 @@ ul {
       transform: translateY(-50%);
     }
   }
+}
+
+.weapon1 {
+  top: 15% !important;
+  transform: translate(-50%, -15%) !important;
+}
+
+.weapon2 {
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+.weapon3 {
+  top: 85% !important;
+  transform: translate(-50%, -85%) !important;
 }
