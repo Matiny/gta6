@@ -1,0 +1,94 @@
+.menu-box {
+  height: 75vh;
+  width: 20vw;
+  position: relative;
+  left: 65%;
+  top: 50%;
+  transform: translate(-65%, -50%);
+  overflow: hidden;
+
+  .item-group {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  -moz-user-select: none;
+
+  .item {
+    width: 97%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 2vh auto;
+    color: white;
+    font-size: 3vh;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+    line-height: 7.5vh;
+    cursor: pointer;
+    transition: text-shadow 0.2s, color 0.2s ease-in-out;
+  }
+
+  .item:hover {
+  text-shadow: 0px 0px 2vh white; }
+
+  img {
+  text-align: center;
+  height: 100%; }
+
+  .back {
+  width: 50%;
+  height: 10%;
+  margin: 2vh auto;
+  text-align: center;
+  cursor: pointer;
+  transition: text-shadow 0.2s, color 0.2s ease-in-out; }
+ }
+
+ .group1, .group2, .group3, .group4, .group5, .group6, .group7 {
+  margin-left: 100%;
+  transition: margin-left 0.2s ease-in-out; }
+}
+
+.knee, .stock, .cover, .jacket {
+  //opacity: 0.5;
+}
+
+.model {
+  position: absolute;
+  height: 100vh;
+  right: 0;
+  top: 0;
+
+  img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%; }
+
+  .body {
+  z-index: 1; }
+
+  .hair {
+  z-index: 7; }
+
+  .top-option {
+  z-index: 6; }
+
+  .shoes {
+  z-index: 5; }
+
+  .bottom {
+  z-index: 4; }
+
+  .top, .one-piece {
+  z-index: 3; }
+
+  .bottom-option {
+  z-index: 2; }
+
+}
+
+.mobile-yes {
+    display: none;
+}

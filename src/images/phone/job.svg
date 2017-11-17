@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   id="svg4136"
+   height="499"
+   viewBox="0 0 499 499"
+   width="499"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="job.svg">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1017"
+     id="namedview4172"
+     showgrid="false"
+     inkscape:zoom="0.5"
+     inkscape:cx="244.54405"
+     inkscape:cy="68.0755"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg4136" />
+  <metadata
+     id="metadata4142">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs4140">
+    <linearGradient
+       id="linearGradient4158"
+       y2="487.6"
+       gradientUnits="userSpaceOnUse"
+       x2="259"
+       y1="10.132"
+       x1="258.37"
+       gradientTransform="matrix(0.81689111,0,0,0.81689111,46.426247,2.8935896)">
+      <stop
+         id="stop4150"
+         stop-color="#e7a53c"
+         offset="0" />
+      <stop
+         id="stop4152"
+         stop-color="#e15323"
+         offset="1" />
+    </linearGradient>
+  </defs>
+  <path
+     id="path4146"
+     d="m 85.141984,403.32544 c -15.10595,-3.67601 -28.039787,-17.024 -31.153776,-32.15283 -0.625738,-3.03884 -0.891065,-52.03597 -0.891065,-164.63623 0,-141.248649 0.148642,-160.88671 1.25017,-165.175388 C 58.560021,24.955368 72.238862,12.420174 88.632233,9.9449937 92.542199,9.3545043 144.9822,9.1531242 254.46113,9.3081624 l 160.11065,0.2267527 5.45578,2.1239159 c 13.24426,5.155891 21.07415,13.086596 26.19524,26.532624 l 1.84185,4.836077 0.22675,160.110658 c 0.15504,109.47975 -0.0463,161.91598 -0.63683,165.82889 -2.24768,14.88376 -12.83009,27.72448 -27.43039,33.28505 l -4.83542,1.8416 -162.96977,0.14077 c -130.29413,0.1062 -163.835689,-0.0736 -167.282969,-0.91492 z"
+     style="fill:url(#linearGradient4158)"
+     inkscape:connector-curvature="0" />
+  <g
+     id="layer1"
+     transform="matrix(0.81689111,0,0,0.81689111,46.426247,2.8935896)">
+    <path
+       id="path4744"
+       d="m 176.3,294.33 0,-130 105.5,0 105.5,0 0,130 0,130 -105.5,0 -105.5,0 0,-130 z m 176,72 0,-13 -73,0 -73,0 0,13 0,13 73,0 73,0 0,-13 z m -90.2,-41.45 c 2.5479,-1.3674 80.101,-79.536 82.961,-83.62 1.1742,-1.6764 0.99502,-2.3431 -1.4549,-5.4134 -1.5367,-1.9259 -5.3265,-5.7308 -8.4218,-8.4554 l -5.6279,-4.9538 -33.716,34.446 c -23.955,24.474 -34.342,34.44 -35.878,34.424 -2.9619,-0.0304 -4.5754,-1.5227 -18.087,-16.728 -6.476,-7.2875 -12.001,-13.25 -12.279,-13.25 -0.27723,0 -4.2744,3.423 -8.8826,7.6066 -7.9813,7.246 -8.308,7.7073 -6.8913,9.7299 2.5637,3.6602 37.719,42.689 40.748,45.238 3.3666,2.8328 3.9331,2.9063 7.529,0.9765 z m -142.8,-108.05 0,-129.5 105.5,0 105.5,0 0,31 0,31 -85,0 -85,0 0,98.5 0,98.5 -20.5,0 -20.5,0 0,-129.5 z"
+       inkscape:connector-curvature="0"
+       style="fill:#ffffff" />
+  </g>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:95.54141235px;line-height:125%;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';text-align:center;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ececec;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+     x="251.81616"
+     y="490.94284"
+     id="text4174"
+     sodipodi:linespacing="125%"><tspan
+       sodipodi:role="line"
+       x="251.81616"
+       y="490.94284"
+       id="tspan4178">Job List</tspan></text>
+</svg>

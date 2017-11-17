@@ -1,0 +1,216 @@
+.offset {
+   position: absolute;
+   right: 1%;
+   height: 100%;
+   width: 48%;
+   margin: 0 auto;
+   overflow: hidden;
+
+   .contracted {
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 7.5%;
+      height: 10%;
+      width: 60%;
+      background-color: rgba(0,0,0,0.5);
+      transition: height 0.3s;
+      color: white;
+      font-size: 3.5vw;
+      font-family: 'signpaintermedium';
+      cursor: pointer;
+      overflow: hidden;
+
+      .expanded {
+         width: 100%;
+         position: relative;
+         text-align: center;
+         transition-property: opacity, visibility;
+         transition-duration: 0.5s;
+         z-index: 2;
+
+         .item1 {
+            margin-top: 5%;
+         }
+
+         .item2, .item3 {
+            margin-top: 1.5%;
+         }
+
+         li {
+            height: 8vh;
+            width: 100%;
+            line-height: 9vh;
+         }
+      }
+
+      .choose {
+         position: relative;
+         height: 10vh;
+         user-select: none;
+
+         p {
+            position: absolute;
+            left: 5%;
+            top: 50%;
+            transform: translateY(-50%);
+         }
+
+         img {
+            width: 10%;
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+         }
+      }
+   }
+
+   .prev {
+      background: rgba(0,0,0,0.5);
+      height: 10vh;
+      width: 4vw;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 0;
+      cursor: pointer;
+
+      img {
+         transform: rotate(-90deg) translateX(50%);
+         width: 85%;
+         position: absolute;
+         top: 50%;
+      }
+   }
+
+   .next {
+      background: rgba(0,0,0,0.5);
+      height: 10vh;
+      width: 4vw;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      cursor: pointer;
+
+      img {
+         transform: rotate(90deg) translateX(-50%);
+         width: 85%;
+         margin: 0 auto;
+         position: absolute;
+         top: 50%;
+         right: 0;
+      }
+   }
+
+   .graph {
+      height: 30%;
+      width: 60%;
+      background-color: rgba(0,0,0,0.5);
+      position: absolute;
+      font-family: 'san';
+      text-align: center;
+      transition-property: opacity, visibility;
+      transition-duration: 0.3s;
+
+      li {
+         position: absolute;
+         width: 100%;
+         height: 25%;
+         font-size: 1.5vw;
+         color: white;
+      }
+
+      .row1 {
+         top: 10%;
+         transform: translateY(-10%);
+      }
+
+      .row2 {
+         top: 50%;
+         transform: translateY(-50%);
+      }
+
+      .row3 {
+         top: 90%;
+         transform: translateY(-90%);
+      }
+   }
+
+   .characters {
+      right: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 50%;
+   }
+
+   .carsguns {
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 25%;
+   }
+
+}
+
+
+.name {
+   position: absolute;
+   left: 0;
+   width: 30%;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.amount {
+   height: 100%;
+   width: 50%;
+   left: 33%;
+   position: absolute;
+}
+
+.bar {
+   position: relative;
+   height: 20%;
+   background: white;
+   top: 50%;
+   transform: translateY(-50%);
+   transition: 0.6s width;
+}
+
+.number {
+   position: absolute;
+   width: 15%;
+   right: 0;
+   top: 50%;
+   transform: translateY(-50%);
+}
+
+.car {
+   position: absolute;
+   margin: auto;
+   left: 0;
+   right: 0;
+   width: 100%;
+   bottom: 10%;
+   transform: translateY(10%);
+}
+
+.char {
+   position: absolute;
+   height: 80%;
+   left: 5%;
+   bottom: 10%;
+   transform: translateY(10%)
+}
+
+.visible {
+   opacity: 1;
+   visibility: visible;
+}
+
+.chosen {
+   background: rgba(255,255,255, 0.5);
+}

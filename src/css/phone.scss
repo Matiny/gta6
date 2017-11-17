@@ -1,0 +1,134 @@
+/*Phone Section______________________*/
+
+@mixin positions($number1, $number2) {
+   position: absolute;
+   left: $number1;
+   top: $number2;
+   transform: translate(-$number1,-$number2);
+}
+
+.screen {
+  height: 100vh;
+  width: 50vh;
+  position: absolute;
+  z-index: 1;
+  left: 85%;
+  transform: translateX(-85%);
+
+  * {
+     position: absolute;
+   }
+
+   div:not(.row0) {
+     height: 12vh;
+     width: 100%;
+   }
+
+   .phone-svg {
+     height: 100%;
+     position: absolute;
+     display: block;
+     top: 0;
+   }
+
+   .app {
+      z-index: 0;
+      top: 10.5%;
+      opacity: 0;
+      width: 86%;
+      left: 7%;
+      transform: scale(.85);
+      transition: all .5s;
+   }
+
+   .visible {
+    opacity: 1;
+    transform: scale(1);
+   }
+
+   .row0 {
+      top: 11vh;
+      height: 6vh;
+      width: 100%;
+      z-index: 3;
+
+      p {
+      color: white;
+      font-size: 2vh;
+      font-family: Arial;
+      text-align: center;
+      margin-top: 1%;
+      }
+
+      .icon1 {
+      height: 50%;
+      top: 0;
+      right: 10%;
+      }
+
+      .icon2 {
+      height: 40%;
+      top: 0;
+      left: 10%;
+      }
+
+      .clock {
+      left: 50%;
+      transform: translateX(-50%);
+      }
+
+      .day {
+      left: 20%;
+      transform: translateX(-20%);
+      }
+   }
+
+   .row1 {
+     top: 17vh;
+   }
+
+   .row2 {
+     top: 34vh;
+   }
+
+   .row3 {
+     top: 51vh;
+   }
+
+   .row1 img, .row2 img, .row3 img {
+     height: 100%;
+     cursor: pointer;
+   }
+
+   .row1 img:nth-child(1), .row2 img:nth-child(1), .row3 img:nth-child(1) {
+      @include positions(15%, 0);
+   }
+
+   .row1 img:nth-child(2), .row2 img:nth-child(2), .row3 img:nth-child(2) {
+      @include positions(50%, 0);
+   }
+
+   .row1 img:nth-child(3), .row2 img:nth-child(3), .row3 img:nth-child(3) {
+      @include positions(85%, 0);
+   }
+
+   @keyframes home-button {
+      0% {opacity: 0;}
+      50% {opacity: 1;}
+      100% {opacity: 0;}
+   }
+
+   #close {
+      height: 8vh;
+      width: 8vh;
+      display: block;
+      margin: auto;
+      left: 0;
+      right: 0;
+      border-radius: 50%;
+      bottom: 2.5vh;
+      cursor: pointer;
+      background-color: rgba(255, 255, 255, 0.5);
+      animation: home-button infinite 2s;
+   }
+}
