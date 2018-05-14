@@ -75,8 +75,14 @@ export default class Main extends Component {
     this.setState({whichCategory});
   }
 
-  mobileBg = number => this.setState({number});
+  closeView = () => {
+    this.setState({
+      whichCategory: "",
+      number: Math.floor(Math.random() * 6) + 1
+    })
+  }
 
+  mobileBg = number => this.setState({number});
 
 
   render() {
@@ -98,10 +104,9 @@ export default class Main extends Component {
         <Slides slidesClass={'mobile-no ' + this.state.slidesVisible}/>
 
         { this.state.whichCategory === "phone"?
-        <Phone close={() => {this.clickIcon("");
-          this.mobileBg(Math.floor(Math.random() * 6) + 1)}} />
+        <Phone close={() => {this.closeView()}} />
         :this.state.whichCategory === "bodies"?
-        <Bodies close={() => {this.clickIcon("")}} />
+        <Bodies close={() => {this.closeView()}} />
         :this.state.whichCategory === "beauty"?
         <Beauty close={() => {this.clickIcon("")}} />
         :this.state.whichCategory === "weapons"?
@@ -159,8 +164,11 @@ export default class Main extends Component {
         <div onClick={() => {
           this.clickIcon("phone");
           this.mobileBg("");
-        }}><p>PHONE</p></div>
-        <div>WEAPONS</div>
+        }}>PHONE</div>
+        <div onClick={() => {
+          this.clickIcon("weapons");
+          this.mobileBg("");
+        }}>WEAPONS</div>
         <div>BEAUTY</div>
         <div>BODIES</div>
         <div>HUD</div>
