@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg id="svg4147" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="377.5" viewBox="0 0 380 377.5" width="380" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/">
+ <defs id="defs7">
+  <filter id="filter4177" style="color-interpolation-filters:sRGB" height="1.122" width="1.0969" y="-.060991" x="-.048447">
+   <feGaussianBlur id="feGaussianBlur4179" stdDeviation="7.115625"/>
+  </filter>
+ </defs>
+ <metadata id="metadata4153">
+  <rdf:RDF>
+   <cc:Work rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+    <dc:title/>
+   </cc:Work>
+  </rdf:RDF>
+ </metadata>
+ <g id="layer2">
+  <path id="path4697-5" opacity=".56" d="m13.75 280.6v-30.625h176.25 176.25v30.625 30.625h-176.25-176.25v-30.625zm0-111.25v-30.625h176.25 176.25v30.625 30.625h-176.25-176.25v-30.625zm0-107.5v-30.625h176.25 176.25v30.625 30.625h-176.25-176.25v-30.625z" filter="url(#filter4177)"/>
+ </g>
+ <g id="layer1">
+  <path id="path4697" d="m13.75 265.55v-30.625h176.25 176.25v30.625 30.625h-176.25-176.25v-30.625zm0-111.25v-30.625h176.25 176.25v30.625 30.625h-176.25-176.25v-30.625zm0-107.5v-30.625h176.25 176.25v30.625 30.625h-176.25-176.25v-30.625z" fill="#fff"/>
+ </g>
+</svg>
