@@ -51,10 +51,14 @@ export default class Phone extends React.Component {
    }
 
    componentDidMount() {
-      setInterval(
+      this.phoneClock = setInterval(
          () => this.setTime(), 10000
       )
    }
+
+   componentWillUnmount() {
+    clearInterval(this.phoneClock);
+  }
 
    render() {
 
