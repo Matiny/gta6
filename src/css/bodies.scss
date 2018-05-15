@@ -1,237 +1,204 @@
 .interactive {
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  overflow: hidden;
+
+  .bod-menu, .gen-menu, .eth-menu {
+    opacity: 0;
+    visibility: hidden;
+    transition-duration: 0.5s;
+    transition-property: opacity, visibility, top;
+  }
+
+  .menu, .bod-menu, .gen-menu, .eth-menu {
+    width: 100%;
+    height: 10%;
     position: absolute;
+    top: 3%;
+
+    li {
+      position: absolute;
+      color: white;
+      font-family: 'san';
+      font-size: 2.5vh;
+      text-align: center;
+      cursor: pointer;
+      height: 50%;
+
+      p {
+        margin-top: 1.2vh;
+      }
+    }
+  }
+
+  .image {
+    width: 80%;
+    position: absolute;
+    margin: auto;
+    left: 0;
     right: 0;
-    overflow: hidden;
+    bottom: 0;
+  }
 
-    .bod-menu, .gen-menu, .eth-menu {
-       opacity: 0;
-       visibility: hidden;
-       transition-duration: 0.5s;
-       transition-property: opacity, visibility, top;
-   }
+  .back {
+    width: 6vh;
+    height: 6vh;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    top: 3%;
+    transition-duration: 0.5s;
+    transition-property: opacity, visibility, top;
+    cursor: pointer;
+    z-index: 2;
+  }
 
-    .menu, .bod-menu, .gen-menu, .eth-menu {
-       width: 100%;
-       height: 10%;
-       position: absolute;
-       top: 3%;
+  .back img {
+    width: 100%;
+  }
 
-       li {
-           position: absolute;
-           color: white;
-           font-family: 'san';
-           font-size: 2.5vh;
-           text-align: center;
-           cursor: pointer;
-           height: 50%;
+  .pickmenu {
+    top: 12%;
+    opacity: 1;
+    visibility: visible;
+  }
 
-           p {
-               margin-top: 1.2vh;
-           }
-       }
-   }
+  .pickmenuback {
+    top: 20%;
+    opacity: 1;
+    visibility: visible;
+  }
 
-   .image {
-       width: 80%;
-       position: absolute;
-       margin: auto;
-       left: 0;
-       right: 0;
-       bottom: 0;
-   }
+  .menu {
+    li {
+      width: 20%;
+    }
 
-   .back {
-       width: 6vh;
-       height: 6vh;
-       position: absolute;
-       left: 50%;
-       transform: translateX(-50%);
-       opacity: 0;
-       visibility: hidden;
-       top: 3%;
-       transition-duration: 0.5s;
-       transition-property: opacity, visibility, top;
-       cursor: pointer;
-       z-index: 2;
-   }
+    li:nth-child(1) {
+      left: 15%;
+      transform: translateX(-15%);
+    }
 
-   .back img {
-       width: 100%;
-   }
+    li:nth-child(2) {
+      left: 50%;
+      transform: translateX(-50%);
+    }
 
-   .pickmenu {
-       top: 12%;
-       opacity: 1;
-       visibility: visible;
-   }
+    li:nth-child(3) {
+      left: 85%;
+      transform: translateX(-85%);
+    }
 
-   .pickmenuback {
-       top: 20%;
-       opacity: 1;
-       visibility: visible;
-   }
+  }
 
-   .menu {
-      li {
-          width: 20%;
-      }
+  .bod-menu li {
+    width: 15%;
+  }
 
-      li:nth-child(1) {
-          left: 15%;
-          transform: translateX(-15%);
-      }
+  .bod-menu li:nth-child(1), .eth-menu li:nth-child(1) {
+    left: 10%;
+    transform: translateX(-10%);
+  }
 
-      li:nth-child(2) {
-          left: 50%;
-          transform: translateX(-50%);
-      }
+  .bod-menu li:nth-child(2), .eth-menu li:nth-child(2) {
+    left: 30%;
+    transform: translateX(-30%);
+  }
 
-      li:nth-child(3) {
-          left: 85%;
-          transform: translateX(-85%);
-      }
+  .bod-menu li:nth-child(3), .eth-menu li:nth-child(3) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 
-   }
+  .bod-menu li:nth-child(4), .eth-menu li:nth-child(4) {
+    left: 70%;
+    transform: translateX(-70%);
+  }
 
-   .bod-menu li {
-       width: 15%;
-   }
+  .bod-menu li:nth-child(5), .eth-menu li:nth-child(5)  {
+    right: 10%;
+    transform: translateX(10%);
+  }
 
-   .bod-menu li:nth-child(1), .eth-menu li:nth-child(1) {
-       left: 10%;
-       transform: translateX(-10%);
-   }
+  .gen-menu li:nth-child(1) {
+    left: 33%;
+    transform: translateX(-33%);
+  }
 
-   .bod-menu li:nth-child(2), .eth-menu li:nth-child(2) {
-       left: 30%;
-       transform: translateX(-30%);
-   }
-
-   .bod-menu li:nth-child(3), .eth-menu li:nth-child(3) {
-       left: 50%;
-       transform: translateX(-50%);
-   }
-
-   .bod-menu li:nth-child(4), .eth-menu li:nth-child(4) {
-       left: 70%;
-       transform: translateX(-70%);
-   }
-
-   .bod-menu li:nth-child(5), .eth-menu li:nth-child(5)  {
-       right: 10%;
-       transform: translateX(10%);
-   }
-
-   .gen-menu li:nth-child(1) {
-       left: 33%;
-       transform: translateX(-33%);
-   }
-
-   .gen-menu li:nth-child(2) {
-       left: 66%;
-       transform: translateX(-66%);
-   }
+  .gen-menu li:nth-child(2) {
+    left: 66%;
+    transform: translateX(-66%);
+  }
 
 }
 
-/*@media screen and (max-width:900px) {
-   body {
-     height: 100vh;
-     width: 100vw;
-     background: url(../images/bgs/mobile-bg.jpg);
-     background-attachment: fixed;
-     background-size: cover;
-     min-height: 100%;
-     width: 100%;
-     background-position: center bottom; }
+@media screen and (max-width:900px) {
 
-     .text {
-        position: relative;
-        height: auto;
-        width: 100%;
-        background: none;
-        font-size: 5vw;
-        line-height: 8vw;
-        margin-bottom: 10%;
-     }
-
-     .text p {
-        position: relative;
-        top: 0;
-        left: 0;
-        transform: translate(0);
-        margin-top: 10%;
-        width: 90%;
-     }
-
-   .interactive {
-      width: 100%;
-      position: relative;
-      height: 200vw;
-   }
-
-   li p {
-      margin-top:0;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 7vw;
-   }
-
-   .image {
+  .interactive {
+    width: 100%;
+    position: relative;
+    height: 200vw;
+    .image {
       position: relative;
       top: 0;
       width: 120%;
       left: -10%;
       margin-top: 10vw;
-   }
-   .menu {
-      height: 60vw;
-      position: relative;
-   }
-   .menu li {
-      width: 100%;
-      height: 25%;
-      position: relative;
-      display: block;
-      margin: 4% auto;
-
-   }
-
-   .back {
+    }
+    .back {
       width: 15vw;
       height: 15vw;
-   }
-   .gen-menu, .bod-menu, .eth-menu {
+    }
+    .gen-menu, .bod-menu, .eth-menu {
       height: auto;
       text-align: center;
       font-size: 7vw;
-   }
-   .gen-menu li {
-     height: 40%;
-     font-size: 7vw;
-     height: 15vw;
-     line-height: 15vw;
-     position: relative;
-   }
-   .bod-menu li, .eth-menu li {
-     height: 40%;
-     font-size: 6vw;
-     height: 12vw;
-     line-height: 12vw;
-     position: relative;
-     left: 0 !important;
-     right: 0 !important;
-     transform: translate(0, 0) !important;
-     width: 100%;
-   }
-   .pickmenu {
-       top: 3%;
-       opacity: 1;
-       visibility: visible;
-   }
+    }
+    .gen-menu li {
+      height: 40%;
+      font-size: 7vw;
+      height: 15vw;
+      line-height: 15vw;
+      position: relative;
+    }
+    .bod-menu li, .eth-menu li {
+      height: 40%;
+      font-size: 6vw;
+      height: 12vw;
+      line-height: 12vw;
+      position: relative;
+      left: 0 !important;
+      right: 0 !important;
+      transform: translate(0, 0) !important;
+      width: 100%;
+    }
+    .pickmenu {
+      top: 3%;
+      opacity: 1;
+      visibility: visible;
+    }
+    .menu {
+      height: 60vw;
+      position: relative;
+      li {
+        width: 100%;
+        height: 25%;
+        position: relative;
+        display: block;
+        margin: 4% auto;
+        p {
+          margin-top:0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: 7vw;
+        }
+      }
+    }
+  }
 }
-*/

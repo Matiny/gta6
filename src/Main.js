@@ -173,9 +173,18 @@ export default class Main extends Component {
           this.clickIcon("beauty");
           this.mobileBg("");
         }}>BEAUTY</div>
-        <div>BODIES</div>
-        <div>HUD</div>
-        <div>MISC.</div>
+        <div onClick={() => {
+          this.clickIcon("bodies");
+          this.mobileBg("");
+        }}>BODIES</div>
+        <div onClick={() => {
+          this.clickIcon("ui");
+          this.mobileBg("");
+        }}>HUD</div>
+        <div onClick={() => {
+          this.clickIcon("misc");
+          this.mobileBg("");
+        }}>MISC.</div>
       </section>
 
       <section className={`mobile-content ${mobileYesOrNo} ${content}`}>
