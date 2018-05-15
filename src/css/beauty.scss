@@ -92,3 +92,44 @@
 .mobile-yes {
     display: none;
 }
+
+@media screen and (max-width:900px) {
+   .mobile-yes {
+      display: block;
+   }
+
+   .model {
+      height: 175vw;
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+      position: relative;
+   }
+   .model img {
+      width: 100%;
+      height: auto;
+   }
+   .menu-box {
+      height: 150vw;
+      width: 75%;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 200vw;
+      position: absolute;
+      z-index: 1;
+      .item-group {
+        .item {
+           font-size: 6vw;
+           line-height: 15vw;
+        }
+      }
+   }
+   .semi-visible {
+      opacity: .25;
+      z-index: 0
+   }
+   .invisible {
+      opacity: 0;
+      visibility: hidden;
+   }
+}

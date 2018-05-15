@@ -169,7 +169,10 @@ export default class Main extends Component {
           this.clickIcon("weapons");
           this.mobileBg("");
         }}>WEAPONS</div>
-        <div>BEAUTY</div>
+        <div onClick={() => {
+          this.clickIcon("beauty");
+          this.mobileBg("");
+        }}>BEAUTY</div>
         <div>BODIES</div>
         <div>HUD</div>
         <div>MISC.</div>

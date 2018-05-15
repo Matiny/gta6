@@ -16,7 +16,8 @@ export default class Beauty extends React.Component {
       bottomOption: "blank.png",
       menuChoice: "",
       dressDisplay: "none",
-      topBotDisplay: "block"
+      topBotDisplay: "block",
+      modelOrMenu: "model"
     }
   }
 
@@ -76,10 +77,30 @@ export default class Beauty extends React.Component {
     this.setState({menuChoice: ""});
   }
 
+  mobileMenuTap = () => {
+    if (window.innerWidth <= 900) {
+      this.setState({modelOrMenu: "menu"});
+    }
+  }
+
+  mobileMenuBack = () => {
+    this.setState({modelOrMenu: "model"});
+  }
+
   render() {
+    //Mobile menu variables
+
+    let invisible = this.state.modelOrMenu === "model" && window.innerWidth <= 900 ?
+    " invisible" : "";
+
+    let semiVisible = this.state.modelOrMenu === "menu" && window.innerWidth <= 900 ?
+    " semi-visible" : "";
+
+    //Only show main menu if user is not in submenu
     let menuDisplay = this.state.menuChoice === "" ?
     "block":"none";
 
+    //Button visibility for layering options
     let jacketOpacity = this.state.topOption === "blank.png" ||
     this.state.topOption === "Cover Up.png"?
     0.5 : 1;
@@ -106,7 +127,7 @@ export default class Beauty extends React.Component {
             <p className="mobile-yes"><b>Tap the model to get started.</b></p>
           </div>
 
-        <section className="menu-box">
+        <section className={"menu-box" + invisible}>
            <nav className="item-group main"
              style={{display: menuDisplay}}>
               <div className="item one"
@@ -130,7 +151,9 @@ export default class Beauty extends React.Component {
               <div className="item seven"
                 onClick={() => {this.pickOption("menuChoice","swim")}}
                 >SWIMWEAR</div>
-              <div className="back mobile-yes"><img src={back} alt=""/></div>
+              <div className="back mobile-yes" onClick={() => {
+                this.mobileMenuBack();
+              }}><img src={back} alt=""/></div>
            </nav>
            <div className="item-group group1"
              style={{marginLeft: this.state.menuChoice == "hair" ? 0 : "100%"}}>
@@ -367,7 +390,9 @@ export default class Beauty extends React.Component {
 
         </section>
 
-        <section className="model">
+        <section className={"model" + semiVisible} onClick={() => {
+          this.mobileMenuTap();
+        }}>
           <img src={require("../images/beauty/body.png")} alt="" className="body" />
           <img src={require("../images/beauty/" + this.state.hair)} alt="" className="hair" />
           <img src={require("../images/beauty/" + this.state.topOption)} alt="" className="top-option" />
