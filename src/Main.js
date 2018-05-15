@@ -108,13 +108,13 @@ export default class Main extends Component {
         :this.state.whichCategory === "bodies"?
         <Bodies close={() => {this.closeView()}} />
         :this.state.whichCategory === "beauty"?
-        <Beauty close={() => {this.clickIcon("")}} />
+        <Beauty close={() => {this.closeView()}} />
         :this.state.whichCategory === "weapons"?
-        <Weapons close={() => {this.clickIcon("")}} />
+        <Weapons close={() => {this.closeView()}} />
         :this.state.whichCategory === "ui"?
-        <UI close={() => {this.clickIcon("")}} />
+        <UI close={() => {this.closeView()}} />
         :this.state.whichCategory === "misc"?
-        <Misc close={() => {this.clickIcon("")}} />
+        <Misc close={() => {this.closeView()}} />
         :null }
 
         <section className="thumbs mobile-no">

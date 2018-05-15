@@ -12,7 +12,8 @@ export default class Weapons extends React.Component {
       shotgun: "Sawed Off Pump.svg",
       heavy: "Rocket Launcher.svg",
       thrown: "Grenade.svg",
-      weaponCategory: ""
+      weaponCategory: "",
+      height: 0
     }
   }
 
@@ -27,6 +28,11 @@ export default class Weapons extends React.Component {
     });
   }
 
+  componentDidMount() {
+    let height = document.querySelector('.text').clientHeight;
+    height += height * .10;
+    this.setState({ height });
+  }
 
   render() {
     //Add or remove class based on clicking an option
@@ -88,7 +94,8 @@ export default class Weapons extends React.Component {
             alt="" /></li>
         </ul>
 
-        <ul className={"melee selection" + meleeOptions}>
+        <ul className={"melee selection" + meleeOptions}
+          style={{ top: this.state.height }} >
           <li className={"choice" + item1}
 
             onClick={(event) => {this.pickWeapon(this.state.weaponCategory, event.currentTarget.textContent + ".svg")}}
@@ -104,11 +111,12 @@ export default class Weapons extends React.Component {
             ><p>Katana</p></li>
         </ul>
 
-        <ul className={"hand selection" + handOptions}>
+        <ul className={"hand selection" + handOptions}
+          style={{ top: this.state.height }} >
           <li className={"choice" + item1}
 
             onClick={(event) => {this.pickWeapon(this.state.weaponCategory, event.currentTarget.textContent + ".svg")}}
-            ><p>Desert Eagle</p></li>
+            ><p>Desert<br/> Eagle</p></li>
           <li className={"choice" + item2}
 
             onClick={(event) => {this.pickWeapon(this.state.weaponCategory, event.currentTarget.textContent + ".svg")}}
@@ -119,7 +127,8 @@ export default class Weapons extends React.Component {
             ><p>Mini Uzi</p></li>
         </ul>
 
-        <ul className={"rifle selection" + rifleOptions}>
+        <ul className={"rifle selection" + rifleOptions}
+          style={{ top: this.state.height }} >
           <li className={"choice" + item1}
 
             onClick={(event) => {this.pickWeapon(this.state.weaponCategory, event.currentTarget.textContent + ".svg")}}
@@ -137,7 +146,8 @@ export default class Weapons extends React.Component {
             ><p>M82</p></li>
         </ul>
 
-        <ul className={"shotgun selection" + shotgunOptions}>
+        <ul className={"shotgun selection" + shotgunOptions}
+          style={{ top: this.state.height }} >
           <li className={"choice" + item1}
 
             onClick={(event) => {this.pickWeapon(this.state.weaponCategory, event.currentTarget.textContent + ".svg")}}
@@ -147,7 +157,7 @@ export default class Weapons extends React.Component {
 
             onClick={(event) => {this.pickWeapon(this.state.weaponCategory, event.currentTarget.textContent + ".svg")}}
 
-            ><p>M1014 Semi-Auto</p></li>
+            ><p>M1014<br/> Semi-Auto</p></li>
           <li className={"choice" + item3}
 
             onClick={(event) => {this.pickWeapon(this.state.weaponCategory, event.currentTarget.textContent + ".svg")}}
@@ -155,7 +165,8 @@ export default class Weapons extends React.Component {
             ><p>AA12 Automatic</p></li>
         </ul>
 
-        <ul className={"heavy selection" + heavyOptions}>
+        <ul className={"heavy selection" + heavyOptions}
+          style={{ top: this.state.height }} >
           <li className={"choice" + item1}
 
             onClick={(event) => {this.pickWeapon(this.state.weaponCategory, event.currentTarget.textContent + ".svg")}}
@@ -173,7 +184,8 @@ export default class Weapons extends React.Component {
             ><p>Grenade Launcher</p></li>
         </ul>
 
-        <ul className={"thrown selection" + thrownOptions}>
+        <ul className={"thrown selection" + thrownOptions}
+          style={{ top: this.state.height }} >
           <li className={"choice" + item1}
 
             onClick={(event) => {this.pickWeapon(this.state.weaponCategory, event.currentTarget.textContent + ".svg")}}
