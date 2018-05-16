@@ -42,6 +42,67 @@ body {
   top: 5%;
 }
 
+/*Base Section______________________*/
+
+.base-content {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  background: url(../images/bgs/popupbg.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center bottom;
+  z-index: 4;
+  transition: opacity .3s;
+
+  .text {
+    height: 100%;
+    width: 50%;
+    color: white;
+    display: block;
+    text-align: center;
+    left: 0%;
+    margin: auto;
+    font-family: "Arial";
+    font-size: 2.5vh;
+    line-height: 4vh;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+
+    p {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      margin: auto;
+      width: 90%;
+    }
+  }
+
+  .text-misc {
+    min-height: 100%;
+    width: 100%;
+    color: white;
+    display: block;
+    text-align: center;
+    left: 0%;
+    margin: auto;
+    font-family: "Arial";
+    font-size: 2.5vh;
+    line-height: 4vh;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+
+    p {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+      margin: auto;
+      width: 75%;
+    }
+  }
+}
 
 /*Radio______________________*/
 
@@ -327,6 +388,16 @@ body {
 
 }
 
+.close-button {
+  height: 2vw;
+  width: 2vw;
+  z-index: 10;
+  @include positions(99%, 2%);
+  background: url(../images/svgs/x-button.svg);
+  background-size: cover;
+  cursor: pointer;
+}
+
 
 
 /*Queries______________________*/
@@ -460,6 +531,26 @@ body {
     width: 90%;
   }
 
+  .base-content {
+    .text-misc {
+      position: relative;
+      height: auto;
+      width: 100%;
+      background: none;
+      font-size: 5vw;
+      line-height: 8vw;
+      margin-bottom: 10%;
+      p {
+        position: relative;
+        top: 0;
+        left: 0;
+        transform: translate(0);
+        margin-top: 10%;
+        width: 90%;
+      }
+    }
+  }
+
   .mobile-no {
     display: none;
   }
@@ -541,85 +632,11 @@ body {
     left: 70vw;
   }
   .close-button {
-    position: relative !important;
-    width: 7vw !important;
-    height: 7vw !important;
-    left: 0 !important;
-    transform: translate(0) !important;
+    position: relative;
+    width: 7vw;
+    height: 7vw;
+    left: 0;
+    transform: translate(0);
     margin: 0 auto;
   }
-}
-
-
-
-/*Base Section______________________*/
-
-.base-content {
-  height: 100vh;
-  width: 100%;
-  position: fixed;
-  background: url(../images/bgs/popupbg.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center bottom;
-  z-index: 4;
-  transition: opacity .3s;
-
-  .text {
-    height: 100%;
-    width: 50%;
-    color: white;
-    display: block;
-    text-align: center;
-    left: 0%;
-    margin: auto;
-    font-family: "Arial";
-    font-size: 2.5vh;
-    line-height: 4vh;
-    position: absolute;
-    background: rgba(0,0,0,0.5);
-
-    p {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      position: absolute;
-      margin: auto;
-      width: 90%;
-    }
-  }
-
-  .text-misc {
-    min-height: 100%;
-    width: 100%;
-    color: white;
-    display: block;
-    text-align: center;
-    left: 0%;
-    margin: auto;
-    font-family: "Arial";
-    font-size: 2.5vh;
-    line-height: 4vh;
-    position: absolute;
-    background: rgba(0,0,0,0.5);
-
-    p {
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      position: absolute;
-      margin: auto;
-      width: 75%;
-    }
-  }
-}
-
-.close-button {
-  height: 2vw;
-  width: 2vw;
-  z-index: 10;
-  @include positions(99%, 2%);
-  background: url(../images/svgs/x-button.svg);
-  background-size: cover;
-  cursor: pointer;
 }
