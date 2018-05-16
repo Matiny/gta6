@@ -214,3 +214,50 @@
 .chosen {
    background: rgba(255,255,255, 0.5);
 }
+
+@media screen and (max-width:900px) {
+   .offset {
+      width: 100%;
+      right: 0;
+      position: relative;
+      height: 200vw;
+      .contracted {
+         width: 80%;
+         font-size: 9.5vw;
+         .choose {
+            height: 20vw;
+         }
+         .expanded li {
+            height: 16vw;
+            width: 100%;
+         }
+      }
+      .char {
+         margin: auto;
+         left: 0;
+         right: 0;
+      }
+      .car {
+         bottom: auto;
+         top: 30%;
+         transform: translateY(-30%);
+      }
+      .prev, .next {
+         width: 15vw;
+         height: 20vw;
+      }
+      .graph {
+         width: 85%;
+         margin: auto;
+         left: 0;
+         right: 0;
+         top: 90%;
+         transform: translateY(-90%);
+         background-color: rgba(0, 0, 0, 0.75);
+         li {
+            font-size: 5.5vw;
+            line-height: 7vw;
+         }
+      }
+   }
+}
