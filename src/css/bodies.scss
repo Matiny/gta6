@@ -34,7 +34,7 @@
   }
 
   .image {
-    width: 80%;
+    height: 75%;
     position: absolute;
     margin: auto;
     left: 0;
@@ -143,10 +143,11 @@
     position: relative;
     height: 200vw;
     .image {
+      display: block;
       position: relative;
       top: 0;
-      width: 120%;
-      left: -10%;
+      width: 90%;
+      margin: 0 auto;
       margin-top: 10vw;
     }
     .back {
