@@ -213,7 +213,7 @@ export default class Beauty extends React.Component {
 
                 onClick={(event) => {this.displayTopBot("top", event.currentTarget.textContent + ".png")}}
 
-                >Crop Top 3</div>
+                >Tube Top</div>
               <figure className="item jacket"
                 style={{opacity: jacketOpacity}}
 
@@ -230,12 +230,18 @@ export default class Beauty extends React.Component {
 
                 onClick={(event) => {this.displayDress("onepiece", event.currentTarget.textContent + ".png")}}
 
-                >Mini Dress</div>
+                >Midi Dress</div>
               <div className="item"
 
                 onClick={(event) => {this.displayDress("onepiece", event.currentTarget.textContent + ".png")}}
 
                 >Maxi Dress</div>
+
+              <div className="item"
+
+                onClick={(event) => {this.displayDress("onepiece", event.currentTarget.textContent + ".png")}}
+
+                >Mini Dress</div>
               <div className="item"
 
                 onClick={(event) => {this.displayDress("onepiece", event.currentTarget.textContent + ".png")}}
@@ -251,11 +257,7 @@ export default class Beauty extends React.Component {
                 onClick={(event) => {this.displayDress("onepiece", event.currentTarget.textContent + ".png")}}
 
                 >Romper</div>
-              <div className="item"
 
-                onClick={(event) => {this.displayDress("onepiece", event.currentTarget.textContent + ".png")}}
-
-                >Party Mini</div>
               <div className="back"><img src={back} alt=""
               onClick={this.goBack}/></div>
            </div>
@@ -348,7 +350,7 @@ export default class Beauty extends React.Component {
 
                 onClick={(event) => {this.pickOption("shoes", event.currentTarget.textContent + ".png")}}
 
-                >Sandals</div>
+                >Gucci Slides</div>
               <div className="item"
 
                 onClick={(event) => {this.pickOption("shoes", event.currentTarget.textContent + ".png")}}

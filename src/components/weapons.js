@@ -29,9 +29,12 @@ export default class Weapons extends React.Component {
   }
 
   componentDidMount() {
-    let height = document.querySelector('.text').clientHeight;
-    height += height * .10;
-    this.setState({ height });
+    if (window.innerWidth <= 900) {
+      console.log("Under 900");
+      let height = document.querySelector('.text').clientHeight;
+      height += height * .10;
+      this.setState({ height });
+    }
   }
 
   render() {
