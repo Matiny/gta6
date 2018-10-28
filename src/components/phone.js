@@ -69,18 +69,20 @@ export default class Phone extends React.Component {
          <div className="base-content">
             <div className="close-button" onClick={this.props.close}></div>
             <div className="text">
-               <p>The game's phone can bring out some game changing features, even though actually using the phone can get you killed. This is because the Phone's features might take too long to access. In the meantime, other players are taking aim at you. Some of the issues with the phone include too many
-               submenu items (Contacts), the fact that it can (and will) interrupt what you're doing, and "pre-scripted load times" as the phone calls someone.
-               As you click back and forth from the apps to the phone's Home button, you'll see that I propose very straightforward options to enhance & simplify the game's
-               phone.
-               <br />
-               <br />
-               For example, if you need to find a set of players to play with, you can deal with the randomness of online matchmaking where players often have
-               all types of motives. You can also be more specific with the exact challenge and money details, but you have to go on reddit or another site to do that.
-               Considering that the game is already online, why isn't there a Find a Crew app that allows you to find people within specific contexts.
-               <br />
-               <em>(P.S. The home button on the phone is clickable)</em>
-               </p>
+            <ul>
+              <li>
+                <p><i>Click on an app to open it. Use the phone's Home button to close it.</i></p>
+              </li>
+              <li>
+                <p>The in-game phone can bring out some game changing features, but it takes too long to use.</p>
+              </li>
+              <li>
+                <p>The phone has too many menus in some cases, and not enough in others.</p>
+              </li>
+              <li>
+                <p>I propose much simpler apps which reduce the amount of menu clutter, adding in features, all in an easy to use interface.</p>
+              </li>
+            </ul>
             </div>
 
             <section className="screen">

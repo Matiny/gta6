@@ -55,7 +55,20 @@ export default class Weapons extends React.Component {
       <div className="base-content">
         <div className="close-button" onClick={this.props.close}></div>
         <div className="text">
-          <p>For quite some time after the game's release, it's been well known that the weapon management of this game is very loose. The issue was that your character always carries all weapons at once, forcing you to constantly cycle through the guns you want to use. The solution that the developers made is a weapon locker that you can only access after buying an expensive office. What I propose is a smaller loadout that you can customize from a bigger pool of weapons at any time. That way, access to your weapons would be simpler, yet still varied.</p>
+          <ul>
+            <li>
+              <p><i>Choose a weapon category, and then pick from the submenu to see your updated loadout</i></p>
+            </li>
+            <li>
+              <p>The weapon management in this game is very loose and awkward. Your character might end up carrying too many weapons at once.</p>
+            </li>
+            <li>
+              <p>If you throw away a gun, the game simply reloads you with that same gun later on.</p>
+            </li>
+            <li>
+              <p>I propose a smaller loadout that you can customize from a bigger stash of weapons. After all, players don't need 20 weapons at once.</p>
+            </li>
+          </ul>
         </div>
 
         <ul className={"loadout" + menuVisible}>

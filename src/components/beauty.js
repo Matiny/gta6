@@ -121,9 +121,17 @@ export default class Beauty extends React.Component {
       <div className="base-content">
           <div className="close-button" onClick={this.props.close}></div>
           <div className="text">
-            <p>
-              While I was designing the wallpapers for this site, my plan was to use clothing from the game. However, I immediately spotted a design flaw with the UX: limited options for female clothing (and hair). After investigating, other players feel that the overall beauty options are lacking in some very basic areas, thus making players feel like they're forcing outfits to work. Interestingly, many of the styles that players want already exist in-game, but are not available to actually use. Some of the existent styles are normal long hairstyles, good looking dresses, and layering options such as boots with jeans. Additional touches I added include more swimsuits (the game only has 1 set), more creative crop tops, and some trendy shoes.
-            </p>
+            <ul>
+              <li>
+                <p><i>Choose a fashion category, then pick an item from the submenu. Click the arrow to pick something else.</i></p>
+              </li>
+              <li>
+                <p>One of the main points of GTA Online updates is character clothing. However, the female fashion options in the game don't reflect how well L.A. women style themselves.</p>
+              </li>
+              <li>
+                <p>The styles players want to see (shown here) include long hair, dresses that don't look like trash, and certain layering options (like jeans in boots.)</p>
+              </li>
+            </ul>
             <p className="mobile-yes"><b>Tap the model to get started.</b></p>
           </div>
 

@@ -198,11 +198,17 @@ render() {
     <div className="base-content">
         <div className="close-button" onClick={this.props.close}></div>
       <div className="text">
-         <p>There is quite a bit going on in this game, as with any other respectable open world game. However, the game's HUD either displays information in a very unclear way, or the wrong information period. The minimap is semitransparent, so sometimes it's hard to see things. The health & armor bar next to it are really small. The weapons and vehicle stats are represented by a bar graph with no numbers.  Sometimes the stats are wrong, as shown on people's Youtube videos. There are numerous other issues, too.
-            <br />
-            <br />
-            A solution would be a different look for the map & health elements that are easier to see. The cars should make a speedometer & odometer pop up (when in 3rd person). The stats should include numbers for easier comparison. Also, I consolidated stats in general since they aren't fun to wade through, and GTA has excessive stats. Some of them serve little to no purpose, such as lung capacity (the game is almost never underwater).
-         </p>
+         <ul>
+           <li>
+             <p>The UI of the game doesn't do a good job displaying information.</p>
+           </li>
+           <li>
+             <p>Sometimes the information is incorrect, other times it has too much or too little.</p>
+           </li>
+           <li>
+             <p>I came up with a series of stats that display the information in a concise, easy to understand manner.</p>
+           </li>
+         </ul>
       </div>
       <section className="offset">
          <img src=

@@ -10,12 +10,13 @@ import './css/font.css';
 //Images
 
 import title from './images/svgs/text.svg';
+import arrow from './images/down-arrow.svg';
 import logo from './images/pngs/vice-logo.png';
 import phone from './images/pngs/phone.png';
 import bodies from './images/pngs/bodies.png';
 import weapons from './images/pngs/weapons.png';
 import beauty from './images/pngs/beauty.png';
-import hud from './images/pngs/hud.png';
+import ui from './images/pngs/ui.png';
 import misc from './images/pngs/misc.png';
 
 //Components
@@ -100,6 +101,11 @@ export default class Main extends Component {
       <div className="content" style={styles}>
         <img src={title} className= {"title mobile-no " + this.state.notRadio} />
 
+        <div className={"arrow mobile-no " + this.state.notRadio}>
+        <img src={arrow} alt="" />
+        </div>
+
+
         <Radio radioClass={'radio ' + this.state.radioVisible} />
         <Slides slidesClass={'mobile-no ' + this.state.slidesVisible}/>
 
@@ -118,44 +124,47 @@ export default class Main extends Component {
         :null }
 
         <section className="thumbs mobile-no">
-          <img src={logo} alt="" className={"logo mobile-no " + this.state.notRadio}/>
-
-          <div className= {"text " + this.state.notRadio}>
-            <p>GTA Online can be a confusing game, mostly due to its unhelpful UI/UX design.
-            In certain areas, players have to find creative ways to figure out the game.
-            The purpose of this site is to introduce a number of potential UI/UX changes
-            to help create a smoother gameplay experience.
-            Click or tap an icon to see more info.
-            <br />
-            <em className="mobile-no">(P.S. Hold Q to access the radio)</em>
-
-          </p>
-
+        <div className={"logo mobile-no " + this.state.notRadio}>
+          <img src={logo} alt="" />
         </div>
 
-        <ul className= {"pattern " + this.state.notRadio}>
 
-          <li className="hexagon">
-            <span className="inside"><img src={phone} alt=""
-              onClick={() => {this.clickIcon("phone")}}
-            /></span>
-          </li>
-          <li className="hexagon">
-            <span className="inside"><img src={bodies} alt="" onClick={() => {this.clickIcon("bodies")}}/></span>
-          </li>
-          <li className="hexagon">
-            <span className="inside"><img src={weapons} alt="" onClick={() => {this.clickIcon("weapons")}}/></span>
-          </li>
-          <li className="hexagon">
-            <span className="inside"><img src={beauty} alt="" onClick={() => {this.clickIcon("beauty")}}/></span>
-          </li>
-          <li className="hexagon">
-            <span className="inside"><img src={hud} alt="" onClick={() => {this.clickIcon("ui")}}/></span>
-          </li>
-          <li className="hexagon">
-            <span className="inside"><img src={misc} alt="" onClick={() => {this.clickIcon("misc")}}/></span>
-          </li>
+          <div className= {"home-text " + this.state.notRadio}>
+            <ul>
+              <li>
+                <p>	• GTA Online isn't user friendly. This concept site showscases interactive UI/UX improvements players would like to see.</p>
+              </li>
+              <li>
+                <p>	• Click the icons to see more info.</p>
+              </li>
+              <li>
+                <p><i>• Press and hold Q to access the radio.</i></p>
+              </li>
+            </ul>
+          </div>
 
+        <ul className={"links " + this.state.notRadio}>
+          <li>
+            <img src={phone} alt="" onClick={() => {this.clickIcon("phone")}} />
+          </li>
+          <li>
+            <img src={beauty} alt="" onClick={() => {this.clickIcon("beauty")}}/>
+          </li>
+          <li>
+            <img src={weapons} alt="" onClick={() => {this.clickIcon("weapons")}}/>
+          </li>
+        </ul>
+
+        <ul className={"links " + this.state.notRadio}>
+          <li>
+            <img src={bodies} alt="" onClick={() => {this.clickIcon("bodies")}}/>
+          </li>
+          <li>
+            <img src={ui} alt="" onClick={() => {this.clickIcon("ui")}}/>
+          </li>
+          <li>
+            <img src={misc} alt="" onClick={() => {this.clickIcon("misc")}}/>
+          </li>
         </ul>
       </section>
 
@@ -166,13 +175,13 @@ export default class Main extends Component {
           this.mobileBg("");
         }}>PHONE</div>
         <div onClick={() => {
+          this.clickIcon("beauty");
+          this.mobileBg("");
+        }}>FASHION</div>
+        <div onClick={() => {
           this.clickIcon("weapons");
           this.mobileBg("");
         }}>WEAPONS</div>
-        <div onClick={() => {
-          this.clickIcon("beauty");
-          this.mobileBg("");
-        }}>BEAUTY</div>
         <div onClick={() => {
           this.clickIcon("bodies");
           this.mobileBg("");
@@ -180,7 +189,7 @@ export default class Main extends Component {
         <div onClick={() => {
           this.clickIcon("ui");
           this.mobileBg("");
-        }}>HUD</div>
+        }}>UI</div>
         <div onClick={() => {
           this.clickIcon("misc");
           this.mobileBg("");

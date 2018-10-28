@@ -49,15 +49,17 @@ export default class Bodies extends React.Component {
          <div className="base-content">
             <div className="close-button" onClick={this.props.close}></div>
             <div className="text">
-               <p>
-                  By default, this game has a cool variety of body types in the game. However, you can't pick them. The men look normal enough, but the women look bizarre. Also, the facial/ethnicity selection involves cycling through a bunch of different faces for both the "mother & father" of your character. It's to a point that you have to watch tutorials on how to make a good looking character.
-
-                  <br />
-                  <br />
-
-                  Instead, one should be able to pick from a default set of bodies and faces, and then go on to fine tune additional details.
-
-               </p>
+               <ul>
+                 <li>
+                   <p><i>Edit the character by picking a category and subcategory.</i></p>
+                 </li>
+                 <li>
+                   <p>The game doesn’t allow you to pick a body type or ethnicity.</p>
+                 </li>
+                 <li>
+                   <p>You also can't refine facial features, and the default characters are ugly.</p>
+                 </li>
+               </ul>
             </div>
 
             <section className="interactive">
