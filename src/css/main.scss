@@ -4,18 +4,6 @@
   padding: 0;
 }
 
-body {
-  background: black;
-  height: 100vh;
-  width: 100vw;
-  overflow-x: hidden;
-}
-
-::selection {
-  background: white;
-  color: black;
-}
-
 @mixin positions($number1, $number2) {
   position: absolute;
   left: $number1;
@@ -26,6 +14,18 @@ body {
 .invisible {
   visibility: hidden;
   opacity: 0;
+}
+
+body {
+  background: black;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: white;
+  color: black;
 }
 
 .content {
@@ -54,7 +54,7 @@ body {
 }
 
 .arrow {
-  @include positions(50%, 37.5%);
+  @include positions(50%, 35%);
   z-index: 2;
   width: 100%;
   text-align: center;
