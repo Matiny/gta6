@@ -48,13 +48,13 @@ body {
 
     100% {transform: translateY(0);}
 
-    25% {transform: translateY(20px);}
+    25% {transform: translateY(50%);}
 
-    75% {transform: translateY(20px);}
+    75% {transform: translateY(50%);}
 }
 
 .arrow {
-  @include positions(50%, 40%);
+  @include positions(50%, 37.5%);
   z-index: 2;
   width: 100%;
   text-align: center;

@@ -99,10 +99,10 @@ export default class Main extends Component {
     }
     return (
       <div className="content" style={styles}>
-        <img src={title} className= {"title mobile-no " + this.state.notRadio} />
+        <img src={title} className= {"title mobile-no " + this.state.notRadio} alt="title text" />
 
         <div className={"arrow mobile-no " + this.state.notRadio}>
-        <img src={arrow} alt="" />
+        <img src={arrow} alt="downwards arrow" />
         </div>
 
 
